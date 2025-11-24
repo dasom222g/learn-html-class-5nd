@@ -3,9 +3,119 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>후츠릿의 홈페이지</title>
   </head>
   <body>
-    수정했어요
+    안녕하세요
+    <!-- form요소 -->
+    <form>
+      <!-- 사용자 텍스트 입력 요소 -->
+      <h3>로그인</h3>
+      <span>ID: </span>
+      <input
+        type="text"
+        name="userid"
+        placeholder="ID를 입력해주세요"
+        required
+      />
+      <br />
+      <!-- 미션: 패스워드 입력 폼 만들기 -->
+      <span>Password: </span>
+      <input
+        type="password"
+        name="userpassword"
+        placeholder="패스워드를 입력해주세요"
+        required
+      />
+      <!-- 제출 버튼 -->
+      <!-- <input type="submit" value="로그인" /> -->
+      <button type="submit">로그인</button>
+    </form>
+    <form>
+      <h3>성별</h3>
+      <input id="male" type="radio" name="gender" value="male" checked />
+      <label for="male">남자</label>
+
+      <input id="female" type="radio" name="gender" value="female" />
+      <label for="female">여자</label>
+
+      <h3>관심사</h3>
+      <!-- 미션: 관심사도 label태그를 이용하여 input과 연결시키기 -->
+      <input
+        id="travel"
+        type="checkbox"
+        name="interests"
+        value="travel"
+        checked
+      />
+      <label for="travel">여행</label>
+
+      <input id="tech" type="checkbox" name="interests" value="tech" />
+      <label for="tech">기술</label>
+
+      <input id="money" type="checkbox" name="interests" value="money" />
+      <label for="money"> 돈</label>
+    </form>
+    <p>지금은 HTML 시간입니다.</p>
+    <p>지금은 HTML 시간입니다.</p>
+    <!-- 주석 단축키: ctrl + 슬러시 -->
+    <!-- 박스태그 -->
+    <div>
+      <a href="https://www.naver.com/" target="_blank">
+        네이버로 페이지 이동
+      </a>
+      <!-- 미션: 구글로 페이지 이동 하는 a태그 만들어서 구현해보세요 -->
+      <a href="https://www.google.com/?hl=ko" target="_blank"
+        >구글로 페이지 이동</a
+      >
+    </div>
+    <!-- 텍스트 관련 태그 -->
+    <div>
+      <h1>h1 제목입니다</h1>
+      <h2>h2 제목입니다</h2>
+      <h3>h3 제목입니다</h3>
+      <h4>h4 제목입니다</h4>
+      <h5>h5 제목입니다</h5>
+      <h6>h6 제목입니다</h6>
+      <hr />
+      <p>
+        Lorem ipsum <span style="color: red">dolor</span> sit amet consectetur
+        adipisicing elit. <strong>Accusantium repellat,</strong> eius omnis vero
+        vel ratione velit ducimus libero illum commodi deserunt maiores,
+        laboriosam aut facilis magnam rerum! Expedita impedit aperiam quia? Quo
+        ullam totam cum doloremque in animi deleniti, qui architecto ab
+        perspiciatis voluptatibus placeat, magni aut! Tempora odit expedita
+        ipsum iste? Ipsum sit odio nulla reiciendis quasi amet qui? Velit
+        aliquid necessitatibus minima nam consequuntur explicabo veniam odio
+        suscipit! Quod quia, obcaecati placeat a tenetur possimus fugiat id
+        sequi at voluptatem assumenda illum, illo ut dolorum molestias
+        consectetur nihil ullam ratione fuga cupiditate, libero ipsa minima
+        impedit. Assumenda, rerum?
+      </p>
+    </div>
+    <!-- 이미지 태그 -->
+    <div>
+      <img
+        src="https://upload.wikimedia.org/wikipedia/commons/a/a9/221125_%EC%B2%AD%EB%A3%A1%EC%98%81%ED%99%94%EC%83%81_%EB%A0%88%EB%93%9C%EC%B9%B4%ED%8E%AB_01_%28cropped%29.jpg"
+        alt="아이유 이미지"
+        width="200"
+      />
+    </div>
+    <!-- 리스트 태그 -->
+    <div>
+      <h3>웹 기술의 3요소</h3>
+      <ol>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+      </ol>
+
+      <h3>내가 좋아하는 가수</h3>
+      <ul>
+        <li>아이유</li>
+        <li>BTS</li>
+        <li>콜드플레이</li>
+      </ul>
+    </div>
   </body>
 </html>
